@@ -1,0 +1,63 @@
+@import '../../styles/vars.scss';
+
+form.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  padding: 0 30px;
+  background-color: $bg-white;
+  border-radius: 5px;
+  border: 1px solid #aaa3;
+  padding-bottom: 20px;
+  margin: 40px auto;
+
+  input {
+    flex: 1;
+    padding: 0 10px;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 10px 15px;
+    font-size: 18px;
+
+    &::placeholder {
+      color: #dddddd;
+    }
+  }
+
+  textarea {
+    flex: 1;
+    padding: 5px 10px;
+    border: 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 10px 15px;
+    resize: none;
+
+    &::placeholder {
+      color: #dddddd;
+    }
+  }
+
+  button {
+    font-size: 18px;
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #3DD0AD;
+    color: #ffffff;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #00ADA7;
+    }
+
+    &:active {
+      background-color: #00A296;
+    }
+  }
+}
